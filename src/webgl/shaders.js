@@ -172,3 +172,16 @@ export function drawScene(gl, programInfo, buffers) {
     gl.drawArrays(gl.TRIANGLE_STRIP, offset, vertexCount);
   }
 }
+
+export function createBuffers(gl) {
+  let squareSize = 0.5;
+  const positions = [squareSize, squareSize, -squareSize, squareSize, squareSize, -squareSize, -squareSize, -squareSize];
+  
+  const buffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
+  
+  return {
+    position: buffer,
+  };
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from '../styles/Physarum.module.css'
-import { programInfo, initShaderProgram, drawScene} from '../webgl/shaders'
+import { programInfo, initShaderProgram, drawScene, createBuffers } from '../webgl/shaders'
 // import PCG32 from "pcg32";
 
 const WebGLCanvas = () => {
@@ -15,19 +15,6 @@ const WebGLCanvas = () => {
         1.0
     );
     ctx.clear(ctx.COLOR_BUFFER_BIT);
-  }
-
-  const createBuffers = (ctx: WebGLRenderingContext) => {
-    let squareSize: number = 0.5;
-    const positions = [squareSize, squareSize, -squareSize, squareSize, squareSize, -squareSize, -squareSize, -squareSize];
-    
-    buffer = ctx.createBuffer();
-    ctx.bindBuffer(ctx.ARRAY_BUFFER, buffer);
-    ctx.bufferData(ctx.ARRAY_BUFFER, new Float32Array(positions), ctx.STATIC_DRAW);
-    
-    return {
-      position: buffer,
-    };
   }
   
   useEffect(() => {
@@ -67,7 +54,7 @@ const WebGLCanvas = () => {
     return () => {
       window.cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [canvasRef]);
 
   return <canvas className={styles.physarum} ref={canvasRef}/>
 }
