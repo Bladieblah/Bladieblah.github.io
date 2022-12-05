@@ -24,7 +24,11 @@ export default function Home() {
           margin: '20px',
           fontSize: '20px',
         }}>
-          I'm like really cool and you should hire me and give me lots of money pls :3. Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money! Give me money!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor eros scelerisque mauris placerat, sit amet pretium justo rutrum. Curabitur ut ligula eu nisi gravida aliquam. In sed tincidunt sapien. Maecenas vel lectus quam. Suspendisse potenti. Suspendisse sit amet magna non diam tempus viverra. Nunc scelerisque tincidunt tellus ac pharetra.
+
+          Nunc maximus eros sit amet malesuada porttitor. Sed aliquam hendrerit mauris eget aliquam. Nam nec faucibus arcu, vitae scelerisque lorem. Proin vel eleifend arcu. Duis non vulputate ligula. Praesent velit diam, auctor id fringilla quis, vestibulum non elit. Integer blandit augue nec arcu efficitur dictum. Sed quam augue, facilisis nec volutpat in, vehicula nec felis.
+
+
         </p>
       </div>
     </>
