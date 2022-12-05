@@ -1,0 +1,54 @@
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 1024px;
+  align-self: center;
+}
+
+.subContainer {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  border-top-left-radius: 95px;
+  border-top-right-radius: 95px;
+  background-image: url('/bg1_1.jpg');
+  background-size: cover;
+  height: fit-content;
+}
+
+.header {
+  /* background-color: #690D77; */
+  /* background-color: #8E11A1; */
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  position: relative;
+}
+
+.buttonContainer {
+  height: 100%;
+  width: 500px;
+  max-width: 50%;
+  position: absolute;
+  right: 70px;
+  top: 65px;
+  display: inline;
+}
+
+.floatybit {
+  height: 100px;
+  margin-top: 0.6em;
+  font-size: 3em;
+}
+
+.name {
+  float: left;
+}
+
+.name :hover {
+  text-decoration: underline !important;
+}
+
+.jobtitle {
+  float: right;
+}

@@ -1,0 +1,28 @@
+.buttonOuter {
+  height: 55px;
+  width: 190px;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: inherit;
+  margin: 5px;
+}
+
+.buttonOuter div {
+  display: table;
+  align-self: center;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+.buttonOuter div a {
+  font-size: 26px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  transition: translate 250ms;
+}
+
+.buttonOuter div :hover {
+  translate: 0px -2px;
+}
