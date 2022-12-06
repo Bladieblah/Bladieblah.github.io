@@ -21,10 +21,10 @@ export default function CV() {
             Working as a Backend Developer helped me hone my skills as a programmer. I am proficient with multiple programming languages, most notably <b>Python</b>, <b>C++</b> and <b>PHP</b>. I enjoy writing safe, optimised, well-tested code that runs without errors in production.
           </p>
           <p>
-            Besides my technical skills, I also enjoy contributing to the rest of the company. I think it's important to cooperate with other departments such as marketing and operations. This allows me to properly prioritise my projects and maximise my impact on the business.
+            Besides my technical skills, I also enjoy contributing to the rest of the company. I think it&amp;s important to cooperate with other departments such as marketing and operations. This allows me to properly prioritise my projects and maximise my impact on the business.
           </p>
           <p>
-            I hope this curriculum vitae is the start of a wonderful and memorable experience for both of us.
+            If you like this curriculum vitae, please reach out and it will hopefully lead to a fruitful partnership.
           </p>
         </article>
       </section>
@@ -37,7 +37,7 @@ export default function CV() {
               <li>Developed, implemented and maintained crucial models for the business, giving customers valuable insights into their finances</li>
               <li>Optimised support processes by creating a model for categorising support tickets and integrating it into Zendesk</li>
               <li>Provided Operations and Marketing with valuable dashboards for day-to-day business</li>
-              <li>Implemented new features, fixed bugs and integrated external API's in the backend as  part of the development team</li>
+              <li>Implemented new features, fixed bugs and integrated external API&amp;s in the backend as  part of the development team</li>
               <li>Added observability to monitor API and microservice health</li>
             </ul>
         </CvItem>
