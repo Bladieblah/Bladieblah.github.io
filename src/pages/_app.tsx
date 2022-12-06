@@ -11,7 +11,7 @@ const abel = Abel({
 
 const fira = Fira_Sans_Condensed({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['200', '400', '500'],
 })
 
 const quick = Quicksand({
