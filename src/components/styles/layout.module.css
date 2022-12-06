@@ -49,6 +49,91 @@
   text-decoration: underline !important;
 }
 
-.jobtitle {
-  float: right;
+.whoami {
+  position: relative;
+  right: 0px;
+}
+
+.whoami div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  --anim-func: linear;
+  --anim-length: 15s;
+}
+
+.datascience {
+  animation: ds__anim var(--anim-length) var(--anim-func) 0s infinite;
+}
+
+.physics {
+  animation: ps__anim var(--anim-length) var(--anim-func) 0s infinite;
+}
+
+.guitar {
+  animation: gt__anim var(--anim-length) var(--anim-func) 0s infinite;
+}
+
+@keyframes ds__anim {
+  0% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  18.5% {
+    opacity: 0;
+  }
+  81.5% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ps__anim {
+  0% {
+    opacity: 0;
+  }
+  14.83% {
+    opacity: 0;
+  }
+  20.83% {
+    opacity: 1;
+  }
+  45.83% {
+    opacity: 1;
+  }
+  51.83% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gt__anim {
+  0% {
+    opacity: 0;
+  }
+  48.16% {
+    opacity: 0;
+  }
+  54.16% {
+    opacity: 1;
+  }
+  79.16% {
+    opacity: 1;
+  }
+  85.16% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

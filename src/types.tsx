@@ -1,3 +1,6 @@
 export type LayoutProps = {
-  children: JSX.Element | JSX.Element[],
+  children: ComponentChild | ComponentChild[],
 }
+
+export type ComponentChild = JSX.Element | string;
+export type ComponentChildren = ComponentChild[] | ComponentChild;
