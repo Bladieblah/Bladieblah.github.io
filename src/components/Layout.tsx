@@ -18,10 +18,7 @@ export default function Layout({ children }: LayoutProps) {
           </Head>
           <FloatyBit/>
           <MainCanvas>
-            <>
-              <NavBar/>
               { children }
-            </>
           </MainCanvas>
         </div>
       </div>

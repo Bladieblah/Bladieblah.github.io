@@ -1,6 +1,5 @@
-export type LayoutProps = {
-  children: ComponentChild | ComponentChild[],
-}
+import { ReactNode } from "react";
 
-export type ComponentChild = JSX.Element | string;
-export type ComponentChildren = ComponentChild[] | ComponentChild;
+export type LayoutProps = {
+  children: ReactNode,
+}

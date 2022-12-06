@@ -1,9 +1,9 @@
 import styles from './styles/cv.module.css'
-import { ComponentChildren } from '../types'
+import { ReactNode } from 'react'
 
 type CVProps = {
   url: string,
-  children: ComponentChildren,
+  children: ReactNode,
 }
 
 export default function CvItem(props: CVProps) {

@@ -36,13 +36,14 @@
 }
 
 .floatybit {
-  height: 100px;
-  margin-top: 0.6em;
-  font-size: 3em;
+  height: 110px;
+  margin-top: 0.4em;
+  font-size: 2.7em;
+  /* display: grid; */
 }
 
-.name {
-  float: left;
+.floatybit a {
+  height: fit-content;
 }
 
 .name :hover {
@@ -51,14 +52,18 @@
 
 .whoami {
   position: relative;
-  right: 0px;
+  left: 0px;
+  top: 0px;
+  width: 330px;
+  float: left;
 }
 
 .whoami div {
+  float: left;
   position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
+  /* top: 0; */
+  left: 0;
+  text-align: left;
   --anim-func: linear;
   --anim-length: 15s;
 }
