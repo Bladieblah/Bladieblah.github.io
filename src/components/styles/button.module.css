@@ -1,10 +1,7 @@
 .buttonOuter {
   height: 55px;
-  width: 190px;
-  border: 2px solid white;
-  border-radius: 10px;
   display: inherit;
-  margin: 5px;
+  margin: 15px;
 }
 
 .buttonOuter div {
@@ -16,7 +13,7 @@
 }
 
 .buttonOuter div a {
-  font-size: 26px;
+  font-size: 20px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;

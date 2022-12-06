@@ -7,7 +7,8 @@
 
 .subContainer {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  /* min-height: calc(100vh - 100px); */
+  min-height: 1500px;
   border-top-left-radius: 95px;
   border-top-right-radius: 95px;
   background-image: url('/bg1_1.jpg');
@@ -16,39 +17,120 @@
 }
 
 .header {
-  /* background-color: #690D77; */
-  /* background-color: #8E11A1; */
-  width: 100%;
-  height: 200px;
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
-  position: relative;
+  margin-left: auto;
+  position: sticky;
+  top: 0px;
+  min-width: fit-content;
 }
 
 .buttonContainer {
-  height: 100%;
-  width: 500px;
-  max-width: 50%;
-  position: absolute;
-  right: 70px;
-  top: 65px;
-  display: inline;
+  display: inline-block;
 }
 
 .floatybit {
-  height: 100px;
-  margin-top: 0.6em;
-  font-size: 3em;
+  height: 110px;
+  margin-top: 0.4em;
+  font-size: 2.7em;
+  display: flex;
 }
 
-.name {
-  float: left;
+.floatybit a {
+  height: fit-content;
 }
 
 .name :hover {
   text-decoration: underline !important;
 }
 
-.jobtitle {
-  float: right;
+.whoami {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 330px;
+  float: left;
+}
+
+.whoami div {
+  float: left;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  text-align: left;
+  --anim-func: linear;
+  --anim-length: 15s;
+}
+
+.datascience {
+  animation: ds__anim var(--anim-length) var(--anim-func) 0s infinite;
+}
+
+.physics {
+  animation: ps__anim var(--anim-length) var(--anim-func) 0s infinite;
+}
+
+.guitar {
+  animation: gt__anim var(--anim-length) var(--anim-func) 0s infinite;
+}
+
+@keyframes ds__anim {
+  0% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  18.5% {
+    opacity: 0;
+  }
+  81.5% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ps__anim {
+  0% {
+    opacity: 0;
+  }
+  14.83% {
+    opacity: 0;
+  }
+  20.83% {
+    opacity: 1;
+  }
+  45.83% {
+    opacity: 1;
+  }
+  51.83% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gt__anim {
+  0% {
+    opacity: 0;
+  }
+  48.16% {
+    opacity: 0;
+  }
+  54.16% {
+    opacity: 1;
+  }
+  79.16% {
+    opacity: 1;
+  }
+  85.16% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
