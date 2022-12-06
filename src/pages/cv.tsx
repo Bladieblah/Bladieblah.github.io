@@ -1,4 +1,5 @@
 import CvItem from '../components/CvItem'
+import CvSkill from '../components/CvSkill'
 import styles from './cv.module.css'
 
 export default function CV() {
@@ -31,27 +32,69 @@ export default function CV() {
         <h1>Work Experience</h1>
         <CvItem company='Dyme' function='Data Scientist' city='Amsterdam' dates='May 2019 - 2022'>
             <ul>
-              <li>Supporting a FinTech startup as it grew tenfold in valuation and tripled in personnel.</li>
-              <li>As the only Data Scientist I coordinated with all departments of the company.</li>
-              <li>Developed, implemented and maintained crucial models for the business, giving customers valuable insights into their finances.</li>
-              <li>Optimised support processes by creating a model for categorising support tickets and integrating it into Zendesk.</li>
-              <li>Provided Operations and Marketing with valuable dashboards for day-to-day business.</li>
-              <li>Implemented new features, fixed bugs and integrated external API's in the backend as  part of the development team.</li>
-              <li>Added observability to monitor API and microservice health.</li>
+              <li>Supporting a FinTech startup as it grew tenfold in valuation and tripled in personnel</li>
+              <li>As the only Data Scientist I coordinated with all departments of the company</li>
+              <li>Developed, implemented and maintained crucial models for the business, giving customers valuable insights into their finances</li>
+              <li>Optimised support processes by creating a model for categorising support tickets and integrating it into Zendesk</li>
+              <li>Provided Operations and Marketing with valuable dashboards for day-to-day business</li>
+              <li>Implemented new features, fixed bugs and integrated external API's in the backend as  part of the development team</li>
+              <li>Added observability to monitor API and microservice health</li>
             </ul>
         </CvItem>
         <CvItem company='University of Amsterdam' function='Freelance developer' city='Amsterdam' dates='Nov 2022 - Dec 2022'>
           <ul>
-            <li>Optimised a quantum mechanical simulation for a PhD student and implemented it using C++ and OpenCL.</li>
-            <li>Achieved a factor 7000 improvement on program runtime over the original Python implementation.</li>
-            <li>Results to be published in 2023 as co-author.</li>
+            <li>Optimised a quantum mechanical simulation for a PhD student and implemented it using C++ and OpenCL</li>
+            <li>Achieved a factor 7000 improvement on program runtime over the original Python implementation</li>
+            <li>Results to be published in 2023 as co-author</li>
           </ul>
         </CvItem>
         <CvItem company='University of Amsterdam' function='Student Assistent' city='Amsterdam' dates='Oct 2018 - Jun 2019'>
           <ul>
-            <li>Developed a system for running and analysing many-body simulations on a remote cluster using CUDA.</li>
+            <li>Developed a system for running and analysing many-body simulations on a remote cluster using CUDA</li>
           </ul>
         </CvItem>
+        <CvItem company='Praxis' function='Part-time job' city='Amersfoort' dates='Oct 2015 - May 2019'>
+        </CvItem>
+      </section>
+      <section>
+        <h1>Education</h1>
+        <CvItem company='University of Amsterdam' function='MSc Theoretical Physics' city='Amsterdam' dates='Sep 2018 - Aug 2020'>
+          <ul>
+            <li>Theoretical Physics, with multiple courses in Computational Physics, GPA 8.2</li>
+            <li>Thesis &ldquo;An objective collapse theory using spontaneous symmetry breaking&rdquo;, Graded 8.5</li>
+          </ul>
+        </CvItem>
+        <CvItem company='University of Amsterdam' function='BSc Physics &amp; Astronomy' city='Amsterdam' dates='Sep 2015 - Aug 2018'>
+          <ul>
+            <li>Obtained 246 EC in 3 years, graduated with Honours and Cum Laude distinctions, GPA 8.5</li>
+            <li>Extracurricular courses from Computer Science and the Humanities Faculty</li>
+            <li>Thesis &ldquo;An objective collapse theory using spontaneous symmetry breaking&rdquo;, Graded 8.5</li>
+          </ul>
+        </CvItem>
+      </section>
+      <section>
+        <h1>Skills</h1>
+        <CvSkill name='Programming languages'>
+          Python, C/C++, PHP, OpenGL, OpenCL, SQL, Kubernetes, Latex, Regex
+        </CvSkill>
+        <CvSkill name='Working in teams'>
+          Agile team with 2-week sprints, daily stand-ups, refinement, planning, demo, retrospective, Notion for tasks managing
+        </CvSkill>
+        <CvSkill name='Academic Skills'>
+          Research, presenting, academic writing, exploring and reading academic literature
+        </CvSkill>
+        <CvSkill name='Languages'>
+          Dutch (Native), English (Fluent)
+        </CvSkill>
+      </section>
+      <section>
+        <h1>Interests</h1>
+        <CvSkill name='Aikido'>
+          13 years of experience, black belt. Currently training for 2nd Dan degree.
+        </CvSkill>
+        <CvSkill name='Guitar'>
+          9 years experience, occasionally post covers to youtube channel. Regularly rehearse with my band.
+        </CvSkill>
       </section>
     </div>
   )
