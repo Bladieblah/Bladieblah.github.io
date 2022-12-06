@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+}
+
+.date {
+  color: var(--mid-green);
+  font-size: 14px;
+  text-align: right;
+  min-width: 120px;
+}
+
+.date p {
+  margin: 0;
+}
+
+.description {
+  flex-grow: 100;
+}
+
+.description ul {
+  padding-left: 20px;
+}
+
+.description li {
+  list-style: circle outside;
+}
+
+.skillname {
+  box-sizing: border-box;
+  min-width: 170px !important;
+  max-width: 170px !important;
+  color: var(--mid-green);
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-right: 3px solid var(--background-color);
+}
+
+.skilldesc {
+  padding-left: 10px;
+}

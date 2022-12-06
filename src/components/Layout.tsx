@@ -5,6 +5,7 @@ import MainCanvas from './MainCanvas'
 import NavBar from './NavBar'
 import { LayoutProps } from '../types'
 import styles from './styles/layout.module.css'
+import Footer from './Footer'
 
 export default function Layout({ children }: LayoutProps) {
   return (
@@ -19,6 +20,7 @@ export default function Layout({ children }: LayoutProps) {
           <FloatyBit/>
           <MainCanvas>
               { children }
+              <Footer/>
           </MainCanvas>
         </div>
       </div>

@@ -1,3 +1,9 @@
+:root {
+  --background-color: #441263;
+  --mid-green: rgb(170, 233, 143);
+  --light-green: rgb(119, 178, 94);
+}
+
 html,
 body {
   padding: 0;
@@ -15,12 +21,25 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: hsl(160, 86%, 97%);
-    background: #441263;
-  }
+html {
+  color-scheme: dark;
+}
+body {
+  color: hsl(152, 17%, 85%);
+  background: var(--background-color);
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: var(--light-green);
+}
+
+h3 {
+  margin: 0px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1em;
 }

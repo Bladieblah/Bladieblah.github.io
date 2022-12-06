@@ -12,6 +12,7 @@ export default function FloatyBit() {
           <div className={styles.physics}>Physicist</div>
           <div className={styles.datascience}>Data Scientist</div>
           <div className={styles.guitar}>Guitarist</div>
+          <div className={styles.programmer}>Programmer</div>
         </div>
       </div>
       <NavBar/>
