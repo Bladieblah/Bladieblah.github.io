@@ -6,7 +6,7 @@ export default function CV() {
   return (
     <div className={styles.container}>
       <section>
-        <h1>Introduction</h1>
+        <h1 style={{marginTop: '0px'}}>Introduction</h1>
         <article>
           <p>
             I am an extremely passionate <b>Physicist</b> turned <b>Data Scientist</b> with a very broad skillset. I rapidly learn new skills and strive to gain a deep understanding of everything I work with. I never settle for mediocre results, always going the extra mile to achieve an outcome I can be proud of.

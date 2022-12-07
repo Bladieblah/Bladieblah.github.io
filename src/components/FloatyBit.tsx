@@ -4,7 +4,7 @@ import styles from './styles/layout.module.css'
 export default function FloatyBit() {
   return (
     <div className={styles.floatybit}>
-      <div>
+      <div className={styles.nameContainer}>
         <div className={styles.name}>
           <a href='./'>Matthijs Wesseling</a>
         </div>

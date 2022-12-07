@@ -1,8 +1,5 @@
 .container {
-  margin-inline: 70px;
-  padding-top: 50px;
   display: grid;
-  font-size: 16px;
 }
 
 .container h1 {
