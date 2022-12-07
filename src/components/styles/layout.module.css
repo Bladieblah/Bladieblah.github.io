@@ -1,5 +1,9 @@
 .container {
-  margin-inline: clamp(10px, calc((100vw - 400px)) / 7.5, 50px);
+  --outer-margin: clamp(10px, calc((100vw - 400px)) / 7.5, 50px);
+  --inner-margin: clamp(10px, calc((100vw - 450px) / 7.5 + 10px), 70px);
+  --radius: clamp(25px, calc((100vw - 600px) / 6 + 25px), 95px);
+  --font-size-name: clamp(24px, calc((100vw - 90px) / 20), 44px);
+  margin-inline: var(--outer-margin);
   max-width: 1024px;
   min-width: 300px;
   align-self: center;
@@ -8,8 +12,6 @@
 .canvas {
   width: 100%;
   min-height: calc(100vh - 100px);
-  /* min-height: 1500px; */
-  --radius: clamp(25px, calc((100vw - 600px) / 6 + 25px), 95px);
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   background-image: url('/bg1_1.jpg');
@@ -20,15 +22,9 @@
 }
 
 .canvasContents {
-  margin-inline: clamp(10px, calc((100vw - 450px) / 7.5 + 10px), 70px);
+  margin-inline: var(--inner-margin);
   padding-top: clamp(20px, calc((100vw - 600px) / 10 + 20px), 50px);
   font-size: 16px;
-}
-
-@media screen and (max-width: 400px) {
-  .canvasContents {
-    font-size: 12px !important;
-  }
 }
 
 .navbar {
@@ -41,6 +37,16 @@
 .buttonContainer {
   display: inline-block;
   font-size: clamp(12px, calc((100vw - 770px) / 100 + 12px), 20px);
+}
+
+.links > br {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .links span {
+    padding: 0 10px !important;
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -62,10 +68,25 @@
   }
 }
 
+@media screen and (max-width: 570px) {
+  .split {
+    display: none;
+  }
+
+  .links > br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .canvasContents {
+    font-size: 12px !important;
+  }
+}
+
 .floatybit {
   height: calc(var(--font-size-name) * 2.5 + 10px);
   margin-top: 0.4em;
-  --font-size-name: clamp(24px, calc((100vw - 90px) / 20), 44px);
   font-size: var(--font-size-name);
   font-weight: 400;
   display: flex;
@@ -88,16 +109,12 @@
 
 .whoami {
   position: relative;
-  left: 0px;
-  top: 0px;
   float: left;
 }
 
 .whoami div {
   float: left;
   position: absolute;
-  /* top: 0; */
-  left: 0;
   text-align: left;
   --anim-func: linear;
   --anim-length: 30s;
@@ -211,13 +228,16 @@
 }
 
 .footer {
-  height: 100px;
   vertical-align: baseline;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-weight: 400;
 }
 
 .links {
   text-align: center;
-  padding-top: 30px;
+  font-size: clamp(10px, calc((100vw - 750px) / 70 + 10px), 14px);
+  margin: 0;
 }
 
 .links span {
@@ -225,9 +245,22 @@
 }
 
 @media print {
+  .floatybit {
+    height: 140px;
+    margin-inline: var(--inner-margin);
+    margin-top: 30px;
+    padding-left: 10px;
+    outline: black 2px solid;
+    width: calc(100vw - 2 * var(--outer-margin) - 2 * var(--inner-margin));
+  }
+
   .datascience {
     color: var(--mid-gray) !important;
     opacity: 1 !important;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 24px !important;
+    top: 10px
   }
 
   .physics {
@@ -269,6 +302,19 @@
   }
 
   .footer {
-    height: 80px;
+    padding-top: 35px;
+    padding-bottom: 10px;
   }
+
+  .links {
+    font-size: 10px;
+  }
+
+  .links span {
+    padding: 0 10px;
+  }
+
+  /* .links a {
+    white-space: nowrap;
+  } */
 }

@@ -12,7 +12,7 @@ export default function Footer() {
         <a href='https://github.com/Bladieblah'><FontAwesomeIcon icon={faGithub}/> Bladieblah</a>
         <span>|</span>
         <a href='mailto:recruitment.mwesseling@gmail.com'><FontAwesomeIcon icon={faEnvelope}/> recruitment.mwesseling@gmail.com</a>
-        <span>|</span>
+        <span className={styles.split}>|</span> <br className={styles.newline}/>
         <a href='https://www.linkedin.com/in/matthijs-wesseling-779879199/'><FontAwesomeIcon icon={faLinkedin}/> Matthijs Wesseling</a>
         <span>|</span>
         <a href='matthijswesseling.nl'><FontAwesomeIcon icon={faEarth}/> matthijswesseling.nl</a>
