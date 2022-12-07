@@ -4,12 +4,12 @@ import styles from './index.module.css'
 export default function Home() {
   return (
     <>
-      <div className={styles.imageWrapper}>
+      {/* <div className={styles.imageWrapper}>
         <img className={styles.image} src='/me.jpg' alt='idk'/>
-      </div>
+      </div> */}
 
       <div style={{
-        float: 'right',
+        // float: 'right',
         border: '2px solid white',
         borderRadius: '10px',
         margin: '70px',
@@ -24,11 +24,7 @@ export default function Home() {
           margin: '20px',
           fontSize: '20px',
         }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor eros scelerisque mauris placerat, sit amet pretium justo rutrum. Curabitur ut ligula eu nisi gravida aliquam. In sed tincidunt sapien. Maecenas vel lectus quam. Suspendisse potenti. Suspendisse sit amet magna non diam tempus viverra. Nunc scelerisque tincidunt tellus ac pharetra.
-
-          Nunc maximus eros sit amet malesuada porttitor. Sed aliquam hendrerit mauris eget aliquam. Nam nec faucibus arcu, vitae scelerisque lorem. Proin vel eleifend arcu. Duis non vulputate ligula. Praesent velit diam, auctor id fringilla quis, vestibulum non elit. Integer blandit augue nec arcu efficitur dictum. Sed quam augue, facilisis nec volutpat in, vehicula nec felis.
-
-
+          Welcome to my website! As you can probably tell, I only just started building it so there is still much work left. Until I add more content, please take a look at my CV!
         </p>
       </div>
     </>
