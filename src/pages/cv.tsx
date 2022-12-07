@@ -30,7 +30,7 @@ export default function CV() {
       </section>
       <section>
         <h1>Work Experience</h1>
-        <CvItem company='Dyme' function='Data Scientist' city='Amsterdam' dates='May 2019 - 2022' id='dymework'>
+        <CvItem company='Dyme' function='Data Scientist' city='Amsterdam' dates='May 2019 - 2022'>
             <ul>
               <li>Supporting a FinTech startup as it grew tenfold in valuation and tripled in personnel</li>
               <li>As the only Data Scientist I coordinated with all departments of the company</li>
