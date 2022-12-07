@@ -74,4 +74,8 @@
   .spacing {
     min-width: 0;
   }
+
+  .content > ul {
+    margin-block-end: 0.5em;
+  }
 }
