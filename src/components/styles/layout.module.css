@@ -212,6 +212,16 @@
 
 .footer {
   height: 100px;
+  vertical-align: baseline;
+}
+
+.links {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.links span {
+  padding: 0 20px;
 }
 
 @media print {
@@ -259,6 +269,6 @@
   }
 
   .footer {
-    height: 0;
+    height: 80px;
   }
 }
