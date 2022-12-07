@@ -20,6 +20,7 @@
 
 .imageWrapper {
   position: relative;
+  display: none;
 }
 
 .image {
@@ -38,5 +39,9 @@
   .footer {
     display: block !important;
     margin-bottom: 20px;
+  }
+
+  .imageWrapper {
+    display: block !important;
   }
 }
