@@ -1,6 +1,6 @@
 import CvItem from '../components/CvItem'
 import CvSkill from '../components/CvSkill'
-import styles from './cv.module.css'
+import styles from './styles/cv.module.css'
 
 export default function CV() {
   return (
