@@ -57,3 +57,21 @@
     width: 0;
   }
 }
+
+@media print {
+  .date {
+    color: var(--dark-gray) !important;
+  }
+
+  .description h2 h3 {
+    color: var(--mid-green) !important;
+  }
+
+  .skillname {
+    border-right: 3px solid var(--light-purple);
+  }
+
+  .spacing {
+    min-width: 0;
+  }
+}
