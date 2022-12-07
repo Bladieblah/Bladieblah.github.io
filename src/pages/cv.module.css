@@ -13,3 +13,13 @@
 .container b {
   font-weight: 500;
 }
+
+@media print {
+  .container h1 {
+    border-bottom: 3px solid var(--light-purple);
+  }
+
+  .container > section:nth-child(2) > article:nth-child(2) {
+    margin-bottom: 150px;
+  }
+}

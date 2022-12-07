@@ -105,6 +105,13 @@
 
 .datascience {
   animation: ds__anim var(--anim-length) var(--anim-func) 0s infinite;
+  z-index: 10;
+}
+
+.coverup {
+  z-index: 5;
+  opacity: 1;
+  background-color: white;
 }
 
 .physics {
@@ -207,3 +214,51 @@
   height: 100px;
 }
 
+@media print {
+  .datascience {
+    color: var(--mid-gray) !important;
+    opacity: 1 !important;
+  }
+
+  .physics {
+    display: none;
+  }
+
+  .guitar {
+    display: none;
+  }
+
+  .programmer {
+    display: none;
+  }
+
+  .canvas {
+    background-image: none;
+    background-color: white;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .name {
+    color: var(--mid-gray) !important;
+  }
+
+  .canvasContents {
+    font-size: 14px;
+    color: var(--dark-gray);
+  }
+
+  .canvasContents h1 {
+    color: var(--mid-green) !important;
+  }
+
+  .canvasContents h2 h3 {
+    color: var(--light-gray) !important;
+  }
+
+  .footer {
+    height: 0;
+  }
+}
