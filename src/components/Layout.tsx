@@ -19,7 +19,6 @@ export default function Layout({ children }: LayoutProps) {
           <FloatyBit/>
           <MainCanvas>
               { children }
-              <Footer/>
           </MainCanvas>
         </div>
       </div>
