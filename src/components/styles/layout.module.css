@@ -27,12 +27,6 @@
   font-size: 16px;
 }
 
-@media screen and (max-width: 400px) {
-  .canvasContents {
-    font-size: 12px !important;
-  }
-}
-
 .navbar {
   margin-left: auto;
   position: sticky;
@@ -43,6 +37,16 @@
 .buttonContainer {
   display: inline-block;
   font-size: clamp(12px, calc((100vw - 770px) / 100 + 12px), 20px);
+}
+
+.links > br {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .links span {
+    padding: 0 10px !important;
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -61,6 +65,22 @@
   
   .canvasContents {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .split {
+    display: none;
+  }
+
+  .links > br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .canvasContents {
+    font-size: 12px !important;
   }
 }
 
@@ -211,11 +231,12 @@
   vertical-align: baseline;
   padding-top: 50px;
   padding-bottom: 30px;
+  font-weight: 400;
 }
 
 .links {
   text-align: center;
-  font-size: 14px;
+  font-size: clamp(10px, calc((100vw - 750px) / 70 + 10px), 14px);
   margin: 0;
 }
 
@@ -286,10 +307,14 @@
   }
 
   .links {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .links span {
     padding: 0 10px;
   }
+
+  /* .links a {
+    white-space: nowrap;
+  } */
 }

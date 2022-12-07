@@ -2,7 +2,6 @@ import Head from 'next/head'
 
 import FloatyBit from './FloatyBit'
 import MainCanvas from './MainCanvas'
-import NavBar from './NavBar'
 import { LayoutProps } from '../types'
 import styles from './styles/layout.module.css'
 import Footer from './Footer'
