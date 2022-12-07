@@ -1,10 +1,14 @@
 import CvItem from '../components/CvItem'
 import CvSkill from '../components/CvSkill'
+import Footer from '../components/Footer'
 import styles from './cv.module.css'
 
 export default function CV() {
   return (
     <div className={styles.container}>
+      <div className={styles.imageWrapper}>
+        <img className={styles.image} src='/me.jpg' alt='idk'/>
+      </div>
       <section>
         <h1 style={{marginTop: '0px'}}>Introduction</h1>
         <article>
@@ -37,10 +41,11 @@ export default function CV() {
               <li>Developed, implemented and maintained crucial models for the business, giving customers valuable insights into their finances</li>
               <li>Optimised support processes by creating a model for categorising support tickets and integrating it into Zendesk</li>
               <li>Provided Operations and Marketing with valuable dashboards for day-to-day business</li>
-              <li>Implemented new features, fixed bugs and integrated external API&amp;s in the backend as  part of the development team</li>
-              <li>Added observability to monitor API and microservice health</li>
+              <li>Implemented new features, fixed bugs and integrated external API{`'`}s in the backend as  part of the development team</li>
+              <li>Architected and engineered new observability tooling to monitor API and microservice health</li>
             </ul>
         </CvItem>
+        <div className={styles.footer}><Footer/></div>
         <CvItem company='University of Amsterdam' function='Freelance developer' city='Amsterdam' dates='Nov 2022 - Dec 2022'>
           <ul>
             <li>Optimised a quantum mechanical simulation for a PhD student and implemented it using C++ and OpenCL</li>
