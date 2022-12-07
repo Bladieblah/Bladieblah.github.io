@@ -3,7 +3,7 @@ import styles from './styles/layout.module.css'
 
 export default function NavBar() {
   return (
-    <div className={styles.header}>
+    <div className={styles.navbar}>
       <div className={styles.buttonContainer}>
         <Button href='/cv' name='Curriculum Vitae'/>
         <Button href='/physarum' name='Computer Art'/>
