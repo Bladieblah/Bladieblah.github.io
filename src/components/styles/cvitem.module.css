@@ -51,10 +51,24 @@
   min-width: 120px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   .spacing {
     min-width: 0;
     width: 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .skillname {
+    min-width: 110px !important;
+    max-width: 110px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skillname {
+    min-width: 90px !important;
+    max-width: 90px !important;
   }
 }
 
