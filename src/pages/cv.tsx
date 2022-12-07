@@ -21,7 +21,7 @@ export default function CV() {
             Working as a Backend Developer helped me hone my skills as a programmer. I am proficient with multiple programming languages, most notably <b>Python</b>, <b>C++</b> and <b>PHP</b>. I enjoy writing safe, optimised, well-tested code that runs without errors in production.
           </p>
           <p>
-            Besides my technical skills, I also enjoy contributing to the rest of the company. I think it&amp;s important to cooperate with other departments such as marketing and operations. This allows me to properly prioritise my projects and maximise my impact on the business.
+            Besides my technical skills, I also enjoy contributing to the rest of the company. I think it is important to cooperate with other departments such as marketing and operations. This allows me to properly prioritise my projects and maximise my impact on the business.
           </p>
           <p>
             If you like this curriculum vitae, please reach out and it will hopefully lead to a fruitful partnership.
