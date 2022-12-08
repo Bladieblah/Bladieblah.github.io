@@ -41,7 +41,15 @@
     margin-bottom: 20px;
   }
 
+  .footer > div {
+    padding-top: 10px !important;
+  }
+
   .imageWrapper {
     display: block !important;
+  }
+
+  .container > section:nth-child(3) > article:nth-child(4) > div:first-child {
+    padding-top: 20px;
   }
 }
