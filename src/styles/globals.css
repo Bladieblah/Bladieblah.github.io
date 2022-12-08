@@ -33,6 +33,10 @@ body {
   background: var(--background-color);
 }
 
+h1 {
+  border-bottom: 3px solid var(--light-purple);
+}
+
 h2 {
   margin-top: 0px;
   margin-bottom: 5px;
