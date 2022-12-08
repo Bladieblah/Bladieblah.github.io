@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import styles from '../../styles/Physarum.module.css'
+import styles from './physarum.module.css'
 import WebGLCanvas from '../../components/WebGLCanvas'
 
 export default function Physarum() {
