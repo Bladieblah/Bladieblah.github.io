@@ -1,15 +1,19 @@
-.imageWrapper {
-  width: 100%;
-  position: relative;
+.content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-inline: 10px;
+}
+
+.about {
+  flex: 100;
+}
+
+.image, .image img {
+  max-width: 250px;
 }
 
 .image {
-  position: absolute;
-  max-width: 30%;
-  max-height: 300px;
-  aspect-ratio: 300/367;
-  top: 70px;
-  left: 70px;
-  border: 2px solid white;
-  z-index: 1;
+  margin-top: 20px;
+  margin-left: 40px;
 }
