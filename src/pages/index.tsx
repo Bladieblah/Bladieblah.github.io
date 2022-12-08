@@ -4,6 +4,9 @@ export default function Home() {
   return (
     <div className={styles.content}>
       <div className={styles.about}>
+        <div className={styles.image}>
+          <img src='/me.jpg'/>
+        </div>
         <h1>About Me</h1>
         <p>
           Welcome to my website! I am a Physicist / Data Scientist with a passion for music and programming. I am currently working at a startup called Dyme, where I developed a number of crucial algorithms. 
@@ -14,9 +17,6 @@ export default function Home() {
         <p>
           For inquiries, feel free to reach out on linked in or via email, both of which can be found in the footer!
         </p>
-      </div>
-      <div className={styles.image}>
-        <img src='/me.jpg'/>
       </div>
     </div>
   )
