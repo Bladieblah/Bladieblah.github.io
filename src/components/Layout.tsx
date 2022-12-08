@@ -12,7 +12,7 @@ export default function Layout({ children }: LayoutProps) {
       <div style={{ margin: 'auto', maxWidth: '1124px' }}>
         <div className={styles.container}>
           <Head>
-            <title>BladieblahCom</title>
+            <title>Matthijs Wesseling</title>
             <meta name="description" content="My website"/>
             <link rel="icon" href="/favicon.ico"/>
           </Head>

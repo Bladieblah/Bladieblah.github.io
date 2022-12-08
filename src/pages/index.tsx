@@ -9,12 +9,10 @@ export default function Home() {
       </div> */}
 
       <div style={{
-        // float: 'right',
         border: '2px solid white',
         borderRadius: '10px',
         margin: '70px',
         maxWidth: '500px',
-        // position: 'absolute',
       }}>
         <p style={{
           fontSize: 28,

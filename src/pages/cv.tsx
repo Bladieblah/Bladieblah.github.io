@@ -28,7 +28,7 @@ export default function CV() {
             Besides my technical skills, I also enjoy contributing to the rest of the company. I think it is important to cooperate with other departments such as marketing and operations. This allows me to properly prioritise my projects and maximise my impact on the business.
           </p>
           <p>
-            If you like this curriculum vitae, please reach out and it will hopefully lead to a fruitful partnership.
+            If you like my curriculum vitae, please reach out and it will hopefully lead to a fruitful partnership.
           </p>
         </article>
       </section>
