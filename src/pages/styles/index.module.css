@@ -1,15 +1,30 @@
-.imageWrapper {
-  width: 100%;
-  position: relative;
+.content {
+  --img-width: clamp(100px, calc((100vw - 460px) / 2.8 + 100px), 250px);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-inline: 10px;
+}
+
+.about {
+  flex: 100;
+}
+
+.about > h1 {
+  margin-right: calc(var(--img-width) + 20px);
+}
+
+.image, .image img {
+  min-width: var(--img-width);
+  max-width: var(--img-width);
+  float: right;
 }
 
 .image {
-  position: absolute;
-  max-width: 30%;
-  max-height: 300px;
-  aspect-ratio: 300/367;
-  top: 70px;
-  left: 70px;
-  border: 2px solid white;
-  z-index: 1;
+  /* margin-top: 20px; */
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
+
+/*860*/

@@ -3,6 +3,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faEarth } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import styles from './styles/layout.module.css'
 
 export default function Footer() {
@@ -15,7 +16,8 @@ export default function Footer() {
         <span className={styles.split}>|</span> <br className={styles.newline}/>
         <a href='https://www.linkedin.com/in/matthijs-wesseling-779879199/'><FontAwesomeIcon icon={faLinkedin}/> Matthijs Wesseling</a>
         <span>|</span>
-        <a href='https://matthijswesseling.nl'><FontAwesomeIcon icon={faEarth}/> matthijswesseling.nl</a>
+        {/* <a href='https://matthijswesseling.nl'><FontAwesomeIcon icon={faEarth}/> matthijswesseling.nl</a> */}
+        <a href='https://www.youtube.com/channel/UCdSqZpO3e_3n0cF4njgaMRQ/videos'><FontAwesomeIcon icon={faYoutube}/> Matthijs Wesseling</a>
       </p>
     </div>
   )
