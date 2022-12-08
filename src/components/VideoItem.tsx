@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react'
-import styles from './styles/video.module.css'
+import styles from './styles/video-item.module.css'
 import axios from "axios"
 
 type VideoProps = {
