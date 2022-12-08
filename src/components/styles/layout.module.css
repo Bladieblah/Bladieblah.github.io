@@ -310,11 +310,7 @@
 
   .links {
     font-size: 10px;
-<<<<<<< HEAD
     color: var(--dark-gray) !important;
-=======
-    color: var(--dark-gray);
->>>>>>> c2a4440a83152251bfd0213bf406ebe237228462
   }
 
   .links span {

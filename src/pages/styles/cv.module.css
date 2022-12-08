@@ -48,12 +48,7 @@
     display: block !important;
   }
 
-<<<<<<< HEAD:src/pages/cv.module.css
-  .container > section:nth-child(3) > article:nth-child(4)  {
-    padding-top: 40px !important;
-=======
   .container > section:nth-child(3) > article:nth-child(4) > div:first-child {
     padding-top: 20px;
->>>>>>> c2a4440a83152251bfd0213bf406ebe237228462:src/pages/styles/cv.module.css
   }
 }
