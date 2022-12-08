@@ -4,7 +4,6 @@ import FloatyBit from './FloatyBit'
 import MainCanvas from './MainCanvas'
 import { LayoutProps } from '../types'
 import styles from './styles/layout.module.css'
-import Footer from './Footer'
 
 export default function Layout({ children }: LayoutProps) {
   return (
@@ -13,7 +12,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className={styles.container}>
           <Head>
             <title>BladieblahCom</title>
-            <meta name="description" content="My website"/>
+            <meta name="description" content="My website, built by me using Next.js"/>
             <link rel="icon" href="/favicon.ico"/>
           </Head>
           <FloatyBit/>
