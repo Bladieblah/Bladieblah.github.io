@@ -5,7 +5,7 @@ export default function Home() {
     <div className={styles.content}>
       <div className={styles.about}>
         <div className={styles.image}>
-          <img src='/me.jpg'/>
+          <img src='/me.jpg' alt='me.jpg'/>
         </div>
         <h1>About Me</h1>
         <p>

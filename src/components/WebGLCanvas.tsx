@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import styles from '../styles/Physarum.module.css'
+import styles from './styles/physarum.module.css'
 import { programInfo, initShaderProgram, drawScene, createBuffers } from '../webgl/shaders'
-// import PCG32 from "pcg32";
 
 const WebGLCanvas = () => {
   const canvasRef: React.RefObject<HTMLCanvasElement> = React.createRef();
