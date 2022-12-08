@@ -5,15 +5,9 @@ import WebGLCanvas from '../../components/WebGLCanvas'
 export default function Physarum() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Physarum slime mold simulation</title>
-        <meta name="description" content="Made by me :D" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <h1>
-          Welcome to the moldiest page on my site!
+          At some point in the near future, this will be a showcase of some of my personal projects. Until then, enjoy this color-shifting rectangle!
         </h1>
         <div className={styles.container}>
           <WebGLCanvas/>
