@@ -23,7 +23,7 @@ async function getMetaData(id: string): Promise<YoutubeMetaData> {
   return response.data;
 }
 
-export default function Video(props: VideoProps) {
+export default function VideoItem(props: VideoProps) {
   const [thumbnail, setThumbnail] = useState<string>('');
   const [title, setTitle] = useState<string>('');
 
