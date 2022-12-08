@@ -38,7 +38,6 @@ export default function VideoItem(props: VideoProps) {
   })
   
   return (
-    <div>
       <a href={`/videos/${props.id}`}>
         <div className={styles.content}>
           <article className={styles.text}>
@@ -55,6 +54,5 @@ export default function VideoItem(props: VideoProps) {
           </div>
         </div>
       </a>
-    </div>
   )
 }
