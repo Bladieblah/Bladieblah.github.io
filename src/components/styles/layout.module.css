@@ -314,6 +314,7 @@
 
   .links {
     font-size: 10px;
+    color: var(--dark-gray) !important;
   }
 
   .links span {
