@@ -1,4 +1,4 @@
-type VideoDataType = {
+export type VideoDataType = {
   id: string,
   description: string,
 }

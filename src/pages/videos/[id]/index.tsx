@@ -1,8 +1,7 @@
-import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { get_video_data } from '../../../data/VideoData'
-import { GetServerSideProps } from 'next'
+import video_data, { get_video_data, VideoDataType } from '../../../data/VideoData'
+import { GetStaticProps } from 'next'
 import styles from './video.module.css'
 
 type YoutubeMetaData = {
@@ -21,17 +20,13 @@ async function getMetaData(id: string): Promise<YoutubeMetaData> {
   return response.data;
 }
 
-export default function Video() {
-  const router = useRouter();
-  const id = router.query.id as string;
-
-  const video = get_video_data(id);
+export default function Video(props: VideoDataType) {
 
   const [title, setTitle] = useState<string>('');
 
   useEffect(() => {
     async function makeRequest() {
-      const data = await getMetaData(id);
+      const data = await getMetaData(props.id);
       setTitle(data.title);
     }
 
@@ -43,19 +38,28 @@ export default function Video() {
       <h1>{title}</h1>
       <div className={styles.video}>
         <iframe
-          src={`https://www.youtube.com/embed/${video?.id}`}
+          src={`https://www.youtube.com/embed/${props.id}`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen={true}/>
           <p>
-            {video?.description}
+            {props.description}
           </p>
       </div>
     </div>
   )
 }
 
-export const getServerSideProps: GetServerSideProps<object> = async (context) => {
+export async function getStaticPaths() {
+  const paths = video_data.map((d) => {return {params: {id: d.id}}});
+  
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export const getStaticProps: GetStaticProps<object> = async (context) => {
   if (!context.params) {
     return { notFound: true }
   }
@@ -72,6 +76,6 @@ export const getServerSideProps: GetServerSideProps<object> = async (context) =>
   }
 
   return {
-    props: {}
+    props: video
   };
 }
