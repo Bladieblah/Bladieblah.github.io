@@ -1,24 +1,12 @@
+import Video from "../../components/Video";
+
 export default function Music() {
   return (
     <>
-      <div style={{
-        // float: 'right',
-        border: '2px solid white',
-        borderRadius: '10px',
-        margin: '70px',
-        width: 'auto',
-      }}>
-        <p style={{
-          fontSize: 28,
-          margin: '20px',
-        }}>Music</p>
-        <p style= {{
-          margin: '20px',
-          fontSize: '20px',
-        }}>
-          At some point this will be a list of music videos I made for youtube, mostly guitar covers.
-        </p>
-      </div>
+      <h1>Music</h1>
+      <Video id='OQUkfxfNL9U'>
+        This is a guitar cover of the song &ldquo;See You in My Nightmares&rdquo; by Autralian band Daysend. I'm using my first guitar, an ESP LTD MH-50.
+      </Video>
     </>
   )
 }
