@@ -11,7 +11,7 @@ type PublicationProps = {
 export default function Publication(props: PublicationProps) {
   return (
     <div className={styles.wrapper}>
-      <a href={`https://arxiv.org/abs/${props.arxiv}`}>
+      <a href={props.arxiv}>
         <article className={styles.publication}>
           <h1>{props.title}</h1>
           <div className={styles.content}>
