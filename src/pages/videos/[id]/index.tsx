@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { get_video_data } from '../VideoData'
+import { get_video_data } from '../../../data/VideoData'
 import { GetServerSideProps } from 'next'
 import styles from './video.module.css'
 
