@@ -41,7 +41,9 @@ export default function VideoItem(props: VideoProps) {
     <div>
       <div className={styles.content}>
         <article className={styles.text}>
-          <h2>{title}</h2>
+          <a href={`/videos/${props.id}`}>
+            <h2>{title}</h2>
+          </a>
           {props.children}
         </article>
         <img src={thumbnail} alt='thumbnail' className={styles.image}/>
