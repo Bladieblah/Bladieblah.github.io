@@ -21,7 +21,7 @@ const video_data: VideoDataType[] = [
     description: `A cover of “Gotta Catch 'em All” by Jason Paige, better known as the “Pokemon Theme Song”. It was a lot of fun to make, and is my most watched video so far!`
   },
   {
-    id: 'i88voMzY',
+    id: 'F2-i88voMzY',
     description: `Complete guitar cover of "A Voice Within" by Intervals. I added the vocals by subtracting the instrumental version of the song from the version with vocals. With a bit of finessing during mixing, it turned out really nice! Using my Ormsby Goliath into the Neural DSP Archetype: Plini and Fortin Nameless Suite plugins. Drums are the Invasion by GGD.`
   },
 ]
