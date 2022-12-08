@@ -15,7 +15,7 @@ export default function Footer() {
         <span className={styles.split}>|</span> <br className={styles.newline}/>
         <a href='https://www.linkedin.com/in/matthijs-wesseling-779879199/'><FontAwesomeIcon icon={faLinkedin}/> Matthijs Wesseling</a>
         <span>|</span>
-        <a href='matthijswesseling.nl'><FontAwesomeIcon icon={faEarth}/> matthijswesseling.nl</a>
+        <a href='https://matthijswesseling.nl'><FontAwesomeIcon icon={faEarth}/> matthijswesseling.nl</a>
       </p>
     </div>
   )

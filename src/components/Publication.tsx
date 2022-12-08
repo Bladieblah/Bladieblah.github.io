@@ -10,14 +10,18 @@ type PublicationProps = {
 
 export default function Publication(props: PublicationProps) {
   return (
-    <article className={styles.publication}>
-        <h1>{props.title}</h1>
-        <div className={styles.content}>
-          <div className={styles.abstract}>
-            {props.children}
+    <div className={styles.wrapper}>
+      <a href={`https://arxiv.org/abs/${props.arxiv}`}>
+        <article className={styles.publication}>
+          <h1>{props.title}</h1>
+          <div className={styles.content}>
+            <div className={styles.abstract}>
+              {props.children}
+            </div>
+            <img src={props.img} alt='thumbnail'/>
           </div>
-          <img src={props.img} alt='thumbnail'/>
-        </div>
-    </article>
+      </article>
+      </a>
+    </div>
   )
 }
