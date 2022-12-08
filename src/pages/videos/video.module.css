@@ -15,3 +15,7 @@
   max-width: inherit;
   aspect-ratio: 560 / 315;
 }
+
+.content > div:nth-child(2) > a > div:first-child {
+  padding-top: 10px !important;
+}

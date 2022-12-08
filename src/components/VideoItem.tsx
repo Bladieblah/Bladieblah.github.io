@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react'
-import styles from './styles/video.module.css'
+import styles from './styles/video-item.module.css'
 import axios from "axios"
 
 type VideoProps = {
@@ -38,16 +38,21 @@ export default function VideoItem(props: VideoProps) {
   })
   
   return (
-    <div>
       <a href={`/videos/${props.id}`}>
         <div className={styles.content}>
           <article className={styles.text}>
             <h2>{title}</h2>
-            {props.children}
+            <div>
+              {props.children}
+              <div className={styles.imageColumn}>
+                <img src={thumbnail} alt='thumbnail'/>
+              </div>
+            </div>
           </article>
-          <img src={thumbnail} alt='thumbnail' className={styles.image}/>
+          <div className={styles.image}>
+            <img src={thumbnail} alt='thumbnail'/>
+          </div>
         </div>
       </a>
-    </div>
   )
 }

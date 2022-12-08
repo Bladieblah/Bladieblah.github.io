@@ -22,7 +22,7 @@ const video_data: VideoDataType[] = [
   },
   {
     id: 'F2-i88voMzY',
-    description: `Complete guitar cover of "A Voice Within" by Intervals. I added the vocals by subtracting the instrumental version of the song from the version with vocals. With a bit of finessing during mixing, it turned out really nice! Using my Ormsby Goliath into the Neural DSP Archetype: Plini and Fortin Nameless Suite plugins. Drums are the Invasion by GGD.`
+    description: `Complete guitar cover of "A Voice Within" by Intervals. I added the vocals by subtracting the instrumental version of the song from the version with vocals. With a bit of finessing during mixing, it turned out really nice! I'm Using my Ormsby Goliath headless guitar.`
   },
 ]
 
