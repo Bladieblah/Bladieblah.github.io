@@ -1,0 +1,22 @@
+.publication {
+
+}
+
+.title {
+
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.abstract {
+  flex: 100;
+}
+
+.content > img {
+  margin: 10px;
+  width: 200px;
+}

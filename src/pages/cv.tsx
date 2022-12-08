@@ -1,7 +1,7 @@
 import CvItem from '../components/CvItem'
 import CvSkill from '../components/CvSkill'
+import styles from './styles/cv.module.css'
 import Footer from '../components/Footer'
-import styles from './cv.module.css'
 
 export default function CV() {
   return (
