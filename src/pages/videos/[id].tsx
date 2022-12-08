@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import video_data, { get_video_data, VideoDataType } from '../../../data/VideoData'
+import video_data, { get_video_data, VideoDataType } from '../../data/VideoData'
 import { GetStaticProps } from 'next'
 import styles from './video.module.css'
 
