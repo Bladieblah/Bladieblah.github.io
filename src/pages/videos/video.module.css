@@ -1,0 +1,17 @@
+.video { 
+  padding-top: 50px;
+  margin: auto;
+  --width: clamp(100px, calc(100vw - 2 * var(--outer-margin) - 2 * var(--inner-margin)), 720px);
+  min-width: var(--width);
+  max-width: var(--width);
+}
+
+.video > iframe {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-inline: auto;
+  min-width: inherit;
+  max-width: inherit;
+  aspect-ratio: 560 / 315;
+}

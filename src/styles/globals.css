@@ -6,6 +6,10 @@
   --light-gray: rgb(48, 48, 48);
   --mid-gray: rgb(28, 28, 28);
   --dark-gray: rgb(13, 13, 13);
+  --outer-margin: clamp(10px, calc((100vw - 400px)) / 7.5, 50px);
+  --inner-margin: clamp(10px, calc((100vw - 450px) / 7.5 + 10px), 70px);
+  --radius: clamp(25px, calc((100vw - 600px) / 6 + 25px), 95px);
+  --font-size-name: clamp(24px, calc((100vw - 90px) / 20), 44px);
 }
 
 html,
@@ -31,6 +35,11 @@ html {
 body {
   color: hsl(152, 17%, 85%);
   background: var(--background-color);
+}
+
+h1 {
+  border-bottom: 3px solid var(--light-purple);
+  font-size: 1.5em;
 }
 
 h2 {

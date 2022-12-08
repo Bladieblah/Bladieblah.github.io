@@ -1,9 +1,12 @@
-import Head from "next/head";
+import VideoItem from "../../components/VideoItem";
+
+import video_data from "../../data/VideoData";
 
 export default function Videos() {
   return (
-    <div>
-      This vid is mindblowing!
-    </div>
+    <>
+      <h1>Music</h1>
+      {video_data.map((d) => (<div key={d.id}><VideoItem id={d.id}>{d.description}</VideoItem></div>))}
+    </>
   )
 }

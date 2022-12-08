@@ -74,7 +74,8 @@
 
 @media print {
   .date {
-    color: var(--dark-gray) !important;
+    color: var(--mid-gray) !important;
+    font-weight: 400;
   }
 
   .description h2 h3 {

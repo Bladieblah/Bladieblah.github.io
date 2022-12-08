@@ -33,7 +33,6 @@
 @media print {
   .container h1 {
     margin-block-start: 0.5em;
-    border-bottom: 3px solid var(--light-purple);
   }
 
   .footer {
@@ -41,11 +40,20 @@
     margin-bottom: 20px;
   }
 
+  .footer > div {
+    padding-top: 10px !important;
+  }
+
   .imageWrapper {
     display: block !important;
   }
 
+<<<<<<< HEAD:src/pages/cv.module.css
   .container > section:nth-child(3) > article:nth-child(4)  {
     padding-top: 40px !important;
+=======
+  .container > section:nth-child(3) > article:nth-child(4) > div:first-child {
+    padding-top: 20px;
+>>>>>>> c2a4440a83152251bfd0213bf406ebe237228462:src/pages/styles/cv.module.css
   }
 }

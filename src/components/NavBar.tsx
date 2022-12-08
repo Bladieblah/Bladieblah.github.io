@@ -7,7 +7,7 @@ export default function NavBar() {
       <div className={styles.buttonContainer}>
         <Button href='/cv' name='Curriculum Vitae'/>
         <Button href='/physarum' name='Computer Art'/>
-        <Button href='/music' name='Music'/>
+        <Button href='/videos' name='Videos'/>
         <Button href='/publications' name='Publications'/>
       </div>
     </div>
