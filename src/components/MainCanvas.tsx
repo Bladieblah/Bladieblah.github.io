@@ -1,4 +1,5 @@
 import { LayoutProps } from "../types"
+import Footer from "./Footer"
 import styles from './styles/layout.module.css'
 
 export default function MainCanvas({ children }: LayoutProps) {
@@ -7,6 +8,7 @@ export default function MainCanvas({ children }: LayoutProps) {
       <div className={styles.canvasContents}>
         { children }
       </div>
+      <Footer/>
     </div>
   )
 }

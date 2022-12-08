@@ -1,7 +1,11 @@
 :root {
   --background-color: #441263;
-  --mid-green: rgb(170, 233, 143);
-  --light-green: rgb(119, 178, 94);
+  --light-purple: #66248f;
+  --light-green: rgb(159, 222, 132);
+  --mid-green: rgb(119, 178, 94);
+  --light-gray: rgb(48, 48, 48);
+  --mid-gray: rgb(28, 28, 28);
+  --dark-gray: rgb(13, 13, 13);
 }
 
 html,
@@ -42,4 +46,10 @@ h3 {
   font-style: italic;
   font-weight: 400;
   font-size: 1.1em;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+  }
 }

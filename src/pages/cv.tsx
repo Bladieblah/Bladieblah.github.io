@@ -1,27 +1,35 @@
 import CvItem from '../components/CvItem'
 import CvSkill from '../components/CvSkill'
+<<<<<<< HEAD
 import styles from './styles/cv.module.css'
+=======
+import Footer from '../components/Footer'
+import styles from './cv.module.css'
+>>>>>>> main
 
 export default function CV() {
   return (
     <div className={styles.container}>
+      <div className={styles.imageWrapper}>
+        <img className={styles.image} src='/me.jpg' alt='idk'/>
+      </div>
       <section>
         <h1 style={{marginTop: '0px'}}>Introduction</h1>
         <article>
           <p>
-            I am an extremely passionate <b>Physicist</b> turned <b>Data Scientist</b> with a very broad skillset. I rapidly learn new skills and strive to gain a deep understanding of everything I work with. I never settle for mediocre results, always going the extra mile to achieve an outcome I can be proud of.
+            I am a passionate <b>Physicist</b> turned <b>Data Scientist</b> with a very broad skillset. I rapidly learn new skills and strive to gain a deeper understanding of everything I work with. I never settle for mediocre results, always going the extra mile to achieve an outcome we can be proud of.
           </p>
           <p>
-            As a <b>Theoretical Physicist</b>, I have plenty of experience with complicated mathematics. Besides constructing mathematical models, I am capable of putting them to the test in high performance simulations. I enjoy converting the results to an interesting story and <b>presenting</b> them to people without a technical background.
+            As a <b>Theoretical Physicist</b>, I have plenty of experience with complicated mathematics. Besides constructing mathematical models, I am capable of putting them to the test in high performance numerical simulations. I enjoy converting the results to an interesting story and <b>presenting</b> them to people without a technical background.
           </p>
           <p>
-            As a <b>Data Scientist</b>, I am comfortable taking on problems from almost any field, without relying too much on domain-specific knowledge. However, I am nothing if not curious and I will learn about a new field as I am working on it. I am therefore very <b>versatile</b> and do not hestitate to tackle any challenge. This makes me a valuable asset to any company that deals with data.
+            Working as a <b>Data Scientist</b>, I am comfortable taking on problems from almost any field, without relying too much on domain-specific knowledge. However, I am nothing if not curious and I will learn about a new field as I am working on it. I am therefore very <b>versatile</b> and do not hestitate to take on any challenge. This makes me a valuable asset to any company that deals with data.
           </p>
           <p>
-            Working as a Backend Developer helped me hone my skills as a programmer. I am proficient with multiple programming languages, most notably <b>Python</b>, <b>C++</b> and <b>PHP</b>. I enjoy writing safe, optimised, well-tested code that runs without errors in production.
+            Working as a Backend Developer helped me hone my skills as a programmer. I am proficient with serveral programming languages, most notably <b>Python</b>, <b>C++</b> and <b>PHP</b>. Writing safe, optimised, well-tested code that runs without errors in production is something that I enjoy doing.
           </p>
           <p>
-            Besides my technical skills, I also enjoy contributing to the rest of the company. I think it&amp;s important to cooperate with other departments such as marketing and operations. This allows me to properly prioritise my projects and maximise my impact on the business.
+            Besides my technical skills, I also enjoy contributing to the rest of the company. I think it{`'`}s important to cooperate with other departments such as marketing and operations. Directly experiencing my impact on the rest of the company is one of the most rewarding aspects of working as a Data Scientist.
           </p>
           <p>
             If you like this curriculum vitae, please reach out and it will hopefully lead to a fruitful partnership.
@@ -30,17 +38,18 @@ export default function CV() {
       </section>
       <section>
         <h1>Work Experience</h1>
-        <CvItem company='Dyme' function='Data Scientist' city='Amsterdam' dates='May 2019 - 2022'>
+        <CvItem company='Dyme' function='Data Scientist' city='Amsterdam' dates='May 2019 - 2023'>
             <ul>
               <li>Supporting a FinTech startup as it grew tenfold in valuation and tripled in personnel</li>
               <li>As the only Data Scientist I coordinated with all departments of the company</li>
               <li>Developed, implemented and maintained crucial models for the business, giving customers valuable insights into their finances</li>
               <li>Optimised support processes by creating a model for categorising support tickets and integrating it into Zendesk</li>
               <li>Provided Operations and Marketing with valuable dashboards for day-to-day business</li>
-              <li>Implemented new features, fixed bugs and integrated external API&amp;s in the backend as  part of the development team</li>
-              <li>Added observability to monitor API and microservice health</li>
+              <li>Implemented new features, fixed bugs and integrated external API{`'`}s in the backend as  part of the development team</li>
+              <li>Architected and engineered new observability tooling to monitor API and microservice health</li>
             </ul>
         </CvItem>
+        <div className={styles.footer}><Footer/></div>
         <CvItem company='University of Amsterdam' function='Freelance developer' city='Amsterdam' dates='Nov 2022 - Dec 2022'>
           <ul>
             <li>Optimised a quantum mechanical simulation for a PhD student and implemented it using C++ and OpenCL</li>

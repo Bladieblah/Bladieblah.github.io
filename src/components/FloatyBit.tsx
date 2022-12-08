@@ -9,8 +9,9 @@ export default function FloatyBit() {
           <a href='./'>Matthijs Wesseling</a>
         </div>
         <div className={styles.whoami}>
-          <div className={styles.physics}>Physicist</div>
           <div className={styles.datascience}>Data Scientist</div>
+          <div className={styles.coverup}/>
+          <div className={styles.physics}>Physicist</div>
           <div className={styles.guitar}>Guitarist</div>
           <div className={styles.programmer}>Programmer</div>
         </div>

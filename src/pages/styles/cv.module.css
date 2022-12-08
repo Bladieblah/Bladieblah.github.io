@@ -13,3 +13,43 @@
 .container b {
   font-weight: 500;
 }
+
+.footer {
+  display: none;
+}
+
+.imageWrapper {
+  position: relative;
+  display: none;
+}
+
+.image {
+  height: 130px;
+  position: absolute;
+  right: 5px;
+  top: calc(-1 * (clamp(20px, calc((100vw - 600px) / 10 + 20px), 50px) + 135px));
+}
+
+@media print {
+  .container h1 {
+    margin-block-start: 0.5em;
+    border-bottom: 3px solid var(--light-purple);
+  }
+
+  .footer {
+    display: block !important;
+    margin-bottom: 20px;
+  }
+
+  .footer > div {
+    padding-top: 10px !important;
+  }
+
+  .imageWrapper {
+    display: block !important;
+  }
+
+  .container > section:nth-child(3) > article:nth-child(4) > div:first-child {
+    padding-top: 20px;
+  }
+}
