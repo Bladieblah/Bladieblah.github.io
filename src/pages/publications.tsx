@@ -5,6 +5,18 @@ export default function Publications() {
   return (
     <div className={styles.publications}>
       <Publication 
+        title={`The inconsistency of linear dynamics and Born's rule`}
+        img='/paper_2106.10136.png'
+        arxiv='https://arxiv.org/abs/2106.10136'
+      >
+        <p>
+          Modern experiments using nanoscale devices come ever closer to bridging the divide between the quantum and classical realms, bringing experimental tests of objective collapse theories that propose alterations to Schrödinger's equation within reach. Such objective collapse theories aim to explain the emergence of classical dynamics in the thermodynamic limit and hence resolve the inconsistency that exists within the axioms of quantum mechanics.
+        </p>
+        <p>
+          Here, we show that requiring the emergence of Born's rule for relative frequencies of measurement outcomes without imposing them as part of any axiom, implies that such objective collapse theories cannot be linear. Previous suggestions for a proof of the emergence of Born's rule in classes of problems that include linear objective collapse theories are analysed and shown to include hidden assumptions.
+        </p>
+      </Publication>
+      <Publication 
         title='An objective collapse model without state dependent stochasticity'
         img='/paper_2208.11584.png'
         arxiv='https://arxiv.org/abs/2208.11584'
