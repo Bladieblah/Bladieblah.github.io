@@ -16,7 +16,7 @@ export default function Publication(props: PublicationProps) {
           <div className={styles.abstract}>
             {props.children}
           </div>
-          <img src={props.img}/>
+          <img src={props.img} alt='thumbnail'/>
         </div>
     </article>
   )
