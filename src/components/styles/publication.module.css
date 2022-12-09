@@ -3,16 +3,16 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
   margin: 20px;
 }
 
-.abstract {
-  flex: 100;
+.image {
+  margin: 10px;
+  float: right;
+  width: clamp(100px, calc((100vw - 350px) / 5 + 100px), 200px);
 }
 
-.content > img {
-  margin: 10px;
-  width: 200px;
+.image > img {
+  height: auto;
+  width: inherit;
 }

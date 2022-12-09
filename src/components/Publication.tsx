@@ -16,9 +16,11 @@ export default function Publication(props: PublicationProps) {
           <h1>{props.title}</h1>
           <div className={styles.content}>
             <div className={styles.abstract}>
+              <div className={styles.image}>
+                <img src={props.img} alt='thumbnail'/>
+              </div>
               {props.children}
             </div>
-            <img src={props.img} alt='thumbnail'/>
           </div>
       </article>
       </a>
