@@ -73,7 +73,7 @@ export default function CV() {
           <ul>
             <li>Obtained 246 EC in 3 years, graduated with Honours and Cum Laude distinctions, GPA 8.5</li>
             <li>Extracurricular courses from Computer Science and the Humanities Faculty</li>
-            <li>Thesis &ldquo;An objective collapse theory using spontaneous symmetry breaking&rdquo;, Graded 8.5</li>
+            <li>Thesis &ldquo;Micromechanical framework of nonlinear excitation in glassy solids&rdquo;, Graded 9.0</li>
           </ul>
         </CvItem>
       </section>
