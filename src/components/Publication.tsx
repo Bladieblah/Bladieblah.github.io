@@ -22,7 +22,7 @@ export default function Publication(props: PublicationProps) {
               {props.children}
             </div>
           </div>
-      </article>
+        </article>
       </a>
     </div>
   )
