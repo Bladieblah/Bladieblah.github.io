@@ -1,0 +1,28 @@
+.container h1 {
+  font-size: 30px;
+}
+
+.container article {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  flex: 100;
+  font-size: 20px;
+}
+
+.wrapper {
+  width: 350px;
+  outline: 2px solid white;
+  margin-left: 20px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.text a {
+  text-decoration: underline;
+}
