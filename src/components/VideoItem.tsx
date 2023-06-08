@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from 'react'
 import styles from './styles/video-item.module.css'
 import axios from "axios"
+import Link from 'next/link'
 
 type VideoProps = {
   id: string,
@@ -38,7 +39,7 @@ export default function VideoItem(props: VideoProps) {
   })
   
   return (
-      <a href={`/videos/${props.id}`}>
+      <Link href={`/videos/${props.id}`}>
         <div className={styles.content}>
           <article className={styles.text}>
             <h2>{title}</h2>
@@ -53,6 +54,6 @@ export default function VideoItem(props: VideoProps) {
             <img src={thumbnail} alt='thumbnail'/>
           </div>
         </div>
-      </a>
+      </Link>
   )
 }
