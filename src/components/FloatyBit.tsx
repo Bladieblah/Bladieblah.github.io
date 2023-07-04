@@ -6,7 +6,7 @@ export default function FloatyBit() {
     <div className={styles.floatybit}>
       <div className={styles.nameContainer}>
         <div className={styles.name}>
-          <a href='./'>Matthijs Wesseling</a>
+          <a href='/'>Matthijs Wesseling</a>
         </div>
         <div className={styles.whoami}>
           <div className={styles.datascience}>Data Scientist</div>
