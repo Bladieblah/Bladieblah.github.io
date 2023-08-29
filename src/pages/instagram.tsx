@@ -292,7 +292,7 @@ export default function Instragram() {
     setLeft(html((videos[(position) % videos.length])))
     setMain(html((videos[(position + 1) % videos.length])))
     setRight(html((videos[(position + 2) % videos.length])))
-  }, [position])
+  })
 
   return (
     <div className={styles.content}>

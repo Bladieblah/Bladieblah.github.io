@@ -50,8 +50,3 @@
     -webkit-mask-image: -webkit-gradient(linear, left bottom, right bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
     pointer-events: none;
 }
-/* (\n +[\w\-]+: )([^;]+); */
-/* $1"$2", */
-
-/* -(\w)(\w+): */
-/* \U$1$2: */
