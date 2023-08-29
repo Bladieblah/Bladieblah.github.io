@@ -1,0 +1,57 @@
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main {
+    min-width: 350px !important;
+    max-width: 350px !important;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    /* margin-top: 50px; */
+}
+
+.main > iframe {
+    min-width: 350px !important;
+    max-width: 350px !important;
+}
+
+.left, .right {
+    min-width: 150px !important;
+    max-width: 150px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left:hover, .right:hover {
+    cursor: pointer;
+}
+
+.left > iframe {
+    transform: scale(0.5);
+    translate: -75px;
+    min-width: 300px !important;
+    max-width: 300px !important;
+    min-height: 600px;
+    -webkit-mask-image: -webkit-gradient(linear, left bottom, right bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5)));
+    pointer-events: none;
+}
+
+.right > iframe {
+    transform: scale(0.5);
+    translate: -75px;
+    min-width: 300px !important;
+    max-width: 300px !important;
+    -webkit-mask-image: -webkit-gradient(linear, left bottom, right bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+    pointer-events: none;
+}
+/* (\n +[\w\-]+: )([^;]+); */
+/* $1"$2", */
+
+/* -(\w)(\w+): */
+/* \U$1$2: */
